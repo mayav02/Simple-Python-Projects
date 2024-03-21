@@ -3,6 +3,8 @@ from words import words
 from hangman_visual import lives_visual_dict
 import string
 
+print("hey bestie!")
+
 def choose_word(words):
     chosen_word = random.choice(words)
     print(chosen_word, '\n')
@@ -39,7 +41,7 @@ def play():
     uppercase_alphabet = list(string.ascii_uppercase)
     dashes = len(chosen_word) * ' - '
     ##lives = 7
-    while len(chosen_word): ##and lives <= 7:
+    ##for len(chosen_word) in chosen_word: ##and lives <= 7:
         print(len(chosen_word))
         ##print(lives)
         new_used_list = [user if user in chosen_word_letters else '-' for user in chosen_word]
@@ -63,7 +65,7 @@ def play():
             print('Play Again!')
             break
         """
-        if len(chosen_word_letters) == len(chosen_word) and chosen_word_letters == chosen_word: ##and lives == len(chosen_word):
+        if chosen_word_letters == chosen_word: ##and lives == len(chosen_word):
             print(f"Congratulations! You guessed {chosen_word} correctly!")
             print("Play Again!")
             break
