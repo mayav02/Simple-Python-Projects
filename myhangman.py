@@ -67,7 +67,3 @@ def play():
 
 play()
 
-
-
-play()
-***
